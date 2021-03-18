@@ -1,0 +1,252 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-size: 20px;
+    line-height: 1.8;
+    color: #333;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+p{
+    font-size: 16px;
+}
+.margin{
+    margin-bottom: 45px;
+}
+.container-fluid{
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.bg{
+    color: #333;
+    background: #fff;
+    padding-top: 0;
+}
+.bg-1{
+    color: #333;
+    background: #dcf8df;
+}
+.bg-2{
+    background: #f7f1c1;
+    color: #333;
+}
+.bg-3{
+    background: #fff;
+    color: #555;
+}
+.bg-4{
+    background: #2f2f2f;
+    color: #fff;
+}
+.fw-b{
+    font-weight: bold;
+}
+.fz-20{
+    font-size: 20px;
+}
+.fz-25{
+    font-size: 25px;
+}
+.fz-30{
+    font-size: 30px;
+}
+.fz-35{
+    font-size: 35px;
+}
+.fz-40{
+    font-size: 40px;
+}
+.fz-50{
+    font-size: 50px;
+}
+.mb-30{
+    margin-bottom: 30px;
+}
+.mb-60{
+    margin-bottom: 60px;
+}
+.in-height{
+    margin-top: 20px;
+    line-height: 50px;
+}
+.position-st{
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0px;
+}
+.main-img{
+    width: 100%;
+    height: 950px;
+    background: center / cover no-repeat url(../images/watch-main.jpg);
+}
+.case-btn, .band-btn{
+    width: 150px;
+    border: 2px solid transparent;
+    border-radius: 150px;
+    background-image: linear-gradient(#fff, #fff), linear-gradient(to right, #FDDE5C, #F8AB5E, #F56A62, #A176C8, #759BEB, #65BEB3, #70DB96);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    border-image-slice: 1;
+    margin: 0 auto;
+    display: inline-block;
+    cursor: pointer;
+}
+.case-btn>p, .band-btn>p{
+    margin-bottom: 0;
+}
+.slick-slide img{
+    margin: 0 auto;
+}
+.slides{
+    position: relative;
+    height: 300px;
+}
+.slides-position{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.cases{
+    height: 300px;
+}
+.slide{
+    cursor: pointer;
+}
+.case{
+    cursor: pointer;
+}
+.cases-position{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.slide:focus{
+    display: none;
+}
+.slick-prev{
+    position: absolute;
+    border: none;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    font-size: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+}
+.slick-next{
+    position: absolute;
+    border: none;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+}
+.slick-prev:after {
+    content: "<";
+    font-size: 20px;
+}
+.slick-next:after {
+    content: ">";
+    font-size: 20px;
+}
+.band-slide{
+    display: none;
+}
+button:focus{
+    display: none;
+}
+.band-on-case img{
+    position: absolute;
+    top: 49.8%;
+    left: 50.4%;
+    transform: translate(-50%, -50%);
+}
+.band-case1{
+    z-index: 100;
+}
+.section5{
+    position: relative;
+}
+.circle{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border-radius: 150px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.5);
+    z-index: 1006;
+}
+.circle-sm{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.6);
+    z-index: 1007;
+    cursor: pointer;
+}
+.circle-text{
+    position: absolute;
+    width: 100%;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1005;
+    color: #fff;
+}
+.bg-black{
+    position: absolute;
+    width: 100%;
+    height: 736px;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1004;
+}
+
+
+@media(max-width:1350px){
+    .pl{
+        padding-left: 50px;
+    }
+}
+@media(max-width:1200px){
+    .band-on-case img{
+        left: 50.6%;
+    }
+}
+@media(max-width:991px){
+    .pl{
+        padding-left: 0;
+        text-align: center;
+    }
+}
+@media(max-width:600px){
+    .circle-text>p{
+        font-size: 24px;
+    }
+    .in-height{
+        font-size: 28px;
+    }
+    .text-box>p{
+        font-size: 30px;
+    }
+    .max-600-mt-30{
+        margin-top: 30px;
+    }
+    .max-600-mb-60{
+        margin-bottom: 60px;
+    }
+    .band-on-case img{
+        left: 50.9%;
+    }
+}
